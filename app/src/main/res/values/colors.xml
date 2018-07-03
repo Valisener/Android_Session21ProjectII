@@ -3,6 +3,8 @@
     <color name="colorPrimary">#66C6EC</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!--Background color -->
     <color name="color_detailed_movie_background">#C3D9EE</color>
+    <!--Color blue to make youtube trailers look clickable-->
     <color name="color_clickable_teaser_text">#0400f1</color>
 </resources>

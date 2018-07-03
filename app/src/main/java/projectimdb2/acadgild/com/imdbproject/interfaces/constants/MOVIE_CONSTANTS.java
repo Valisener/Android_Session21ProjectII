@@ -27,7 +27,6 @@ public interface MOVIE_CONSTANTS {
     String DETAIL_MOVIE_POSTER_IMAGE_BASE = "http://api.themoviedb.org/3/movie/";
     //String that contains the last part of the url for the posters on the detailed movie list
     String DETAIL_MOVIE_POSTER_IMAGE_APIKEY = "/images?api_key=8496be0b2149805afa458ab8ec27560c";
-
     //String that contains the first part for the detailed movie url
     String MOVIE_DETAIL_URL_BASE = "http://api.themoviedb.org/3/movie/";
     //String that contains the api key part for the detailed movie url
@@ -43,13 +42,13 @@ public interface MOVIE_CONSTANTS {
     //String that contains the first part for the youtube url
     String YOUTUBE_BASE_URL = "https://www.youtube.com/watch?v=";
     //String that contains the url to the latest movies
-    final String URL_MOVIES_LATEST = BASE_URL + LATEST_TEXT + apiKey;
+    String URL_MOVIES_LATEST = BASE_URL + LATEST_TEXT + apiKey;
     //String that contains the url to the upcoming movies
-    final String URL_MOVIES_UPCOMING = BASE_URL + UPCOMING_TEXT + apiKey;
+    String URL_MOVIES_UPCOMING = BASE_URL + UPCOMING_TEXT + apiKey;
     //String that contains the url to the now playing movies
-    final String URL_MOVIES_NOW_PLAYING = BASE_URL + NOW_PLAYING_TEXT + apiKey;
+    String URL_MOVIES_NOW_PLAYING = BASE_URL + NOW_PLAYING_TEXT + apiKey;
     //String that contains the url to the popular movies
-    final String URL_MOVIES_POPULAR = BASE_URL + POPULAR_TEXT + apiKey;
+    String URL_MOVIES_POPULAR = BASE_URL + POPULAR_TEXT + apiKey;
     //String that contains the url to the top rated movies
-    final String URL_MOVIES_TOP_RATED = BASE_URL + TOP_RATED + apiKey;
+    String URL_MOVIES_TOP_RATED = BASE_URL + TOP_RATED + apiKey;
 }

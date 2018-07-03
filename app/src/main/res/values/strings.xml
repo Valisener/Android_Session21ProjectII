@@ -8,7 +8,7 @@
     <string name="textview_movie_votedby_text_only">) voted by</string>
     <string name="textview_movie_list_openbracket">(</string>
     <!--end information string for the first set of movie lists-->
-    <!--Menu items-->
+    <!--Menu items for main activity and detailed activity-->
     <string name="menu_mostpopular">Most Popular</string>
     <string name="menu_upcomingmovies">Upcoming Movies</string>
     <string name="menu_latestmovies">Latest Movies</string>
@@ -17,6 +17,7 @@
     <string name="menu_refresh">Refresh</string>
     <string name="menu_favorites">My Favorites</string>
     <string name="menu_watchlist">My Watchlist</string>
+    <string name="menu_post_rating">Send Rating of 8.5 for this movie</string>
     <!--End menu items-->
     <!--placeholders and information for the detail screen-->
     <string name="rating_score_out_ten">/10)</string>
@@ -36,7 +37,6 @@
     <string name="revenue">Revenue $</string>
     <string name="status">Status:</string>
     <string name="users_text"> users.</string>
-    <string name="menu_post_rating">Send Rating of Movie</string>
     <string name="posters_description">This displays an image of the posters.</string>
     <!--end of placeholders and info for detail screen-->
 

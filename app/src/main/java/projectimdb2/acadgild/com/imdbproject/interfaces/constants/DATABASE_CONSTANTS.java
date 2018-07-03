@@ -2,47 +2,47 @@ package projectimdb2.acadgild.com.imdbproject.interfaces.constants;
 
 public interface DATABASE_CONSTANTS {
     //string that holds the text create table  for the database creation
-    static final String CREATE_TABLE = "CREATE TABLE ";
+    String CREATE_TABLE = "CREATE TABLE ";
     //string that holds the text moviedetails for the database creation
-    static final String TABLE_MOVIEDETAILS = "moviedetails";
+    String TABLE_MOVIEDETAILS = "moviedetails";
     //string that holds the text comma  for the database creation
-    static final String COMMA = ", ";
+    String COMMA = ", ";
     //string that holds the text id  for the database creation
-    static final String COLUMN_ID = "id";
+    String COLUMN_ID = "id";
     //string that holds the text title for the database creation
-    static final String COLUMN_TITLE = "title";
+    String COLUMN_TITLE = "title";
     //string that holds the text releasedate for the database creation
-    static final String COLUMN_RELEASE_DATE = "releasedate";
+    String COLUMN_RELEASE_DATE = "releasedate";
     //string that holds the text posterpath for the database creation
-    static final String COLUMN_POSTER_PATH = "posterpath";
+    String COLUMN_POSTER_PATH = "posterpath";
     //string that holds the text popularity for the database creation
-    static final String COLUMN_POPULARITY = "popularity";
+    String COLUMN_POPULARITY = "popularity";
     //string that holds the text voteaverage for the database creation
-    static final String COLUMN_VOTE_AVERAGE = "voteaverage";
+    String COLUMN_VOTE_AVERAGE = "voteaverage";
     //string that holds the text votecount for the database creation
-    static final String COLUMN_VOTE_COUNT = "votecount"    ;
+    String COLUMN_VOTE_COUNT = "votecount"    ;
     //string that holds the text overview for the database creation
-    static final String COLUMN_MOVIE_RAW_DETAILS  = "overview" ;
+    String COLUMN_MOVIE_RAW_DETAILS  = "overview" ;
     //string that holds the text favorites for the database creation
-    static final String COLUMN_IS_FAVORITE   = "favorites" ;
+    String COLUMN_IS_FAVORITE   = "favorites" ;
     //string that holds the text watchlist for the database creation
-    static final String COLUMN_IS_WATCHLIST = "watchlist"  ;
+    String COLUMN_IS_WATCHLIST = "watchlist"  ;
     //string that holds the text for database name  for the database creation
-    static final String DATABASE_NAME = "mov222222111";
+    String DATABASE_NAME = "mymoviedatabase";
     //integer that holds the databaseversion number
     int DATABASE_VERSION = 1;
     //string that holds the text
-    static final String OPEN_BRACKET = "(";
+    String OPEN_BRACKET = "(";
     //string that holds the text
-    static final String DATATYPE_VARCHAR = " VARCHAR";
+    String DATATYPE_VARCHAR = " VARCHAR";
     //string that holds the text
-    static final String DATATYPE_NUMERIC = " INTEGER";
+    String DATATYPE_NUMERIC = " INTEGER";
     //string that holds the text REAL for the database creation
-    static final String DATATYPE_REAL = " REAL";
+    String DATATYPE_REAL = " REAL";
 
 
     //String that create the database table i used a string since android said it would be better than stringbuilder
-    public static final String CREATE_MY_TABLE = CREATE_TABLE +
+    String CREATE_MY_TABLE = CREATE_TABLE +
             TABLE_MOVIEDETAILS + OPEN_BRACKET +
             COLUMN_ID + " INTEGER PRIMARY KEY, " +
             COLUMN_TITLE +             DATATYPE_VARCHAR + COMMA  +

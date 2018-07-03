@@ -143,7 +143,6 @@ public class MainActivity extends AppCompatActivity implements MOVIE_CONSTANTS,R
     }
     //method that populates the list from the database depending on the selection of favorites or watchlist
     private void populateListFromDatabaseSelection(String columnSelection) {
-
         //create new databasehelper object that handles the database interactions
         DatabaseHelper databaseHelper = new DatabaseHelper(MainActivity.this,DATABASE_NAME,null,DATABASE_VERSION);
         //set the arraylist to the database helper arraylist based on the selection
