@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <group android:id="@+id/menu_first">
+        <item
+            android:id="@+id/menu_detail_favorites"
+            android:icon="@drawable/menu_detail_star"
+            android:title=""
+            app:showAsAction="ifRoom">
+
+        </item>
+
+    </group>
+
+    <group android:id="@+id/menu_detailed_second">
+        <item
+            android:id="@+id/menu_detail_watchlist"
+            android:icon="@drawable/menu_detail_movieicon"
+            android:title=""
+            app:showAsAction="ifRoom">
+        </item>
+    </group>
+
+
+    <item android:id="@+id/menu_detailed_post_rating"
+        android:title="@string/menu_post_rating">
+    </item>
+
+
+
+</menu>

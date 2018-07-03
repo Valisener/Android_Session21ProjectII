@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/movie_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_movie_popularity_text"
+        app:layout_constraintStart_toEndOf="@+id/movie_list_poster"
+        app:layout_constraintTop_toBottomOf="@+id/movie_list_released" />
+
+    <ImageView
+        android:id="@+id/imageview_star_image"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/star"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/movie_list_poster"
+        app:layout_constraintTop_toBottomOf="@+id/movie_popularity" />
+
+    <TextView
+        android:id="@+id/movie_list_voted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="8.7"
+        app:layout_constraintStart_toEndOf="@+id/movie_list_ratingbar"
+        app:layout_constraintTop_toBottomOf="@+id/movie_list_popularity_bar" />
+
+    <TextView
+        android:id="@+id/movie_list_totalvotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:text="1,542"
+        app:layout_constraintStart_toEndOf="@+id/movie_list_votedby_text_only"
+        app:layout_constraintTop_toTopOf="@+id/movie_list_voted" />
+
+    <TextView
+        android:id="@+id/movie_list_released"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/movie_list_layout_releasedtext"
+        app:layout_constraintTop_toBottomOf="@+id/movie_list_title" />
+
+    <TextView
+        android:id="@+id/movie_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="@string/textview_movie_title"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/movie_list_poster"
+        app:layout_constraintTop_toTopOf="@+id/movie_list_poster" />
+
+    <ImageView
+        android:id="@+id/movie_list_poster"
+        android:layout_width="106dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="16dp"
+        android:src="@drawable/loading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movie_list_layout_releasedtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_movie_list_released_text_only"
+        app:layout_constraintStart_toEndOf="@+id/movie_list_poster"
+        app:layout_constraintTop_toBottomOf="@+id/movie_list_title"
+        />
+
+    <TextView
+        android:id="@+id/movie_list_users_text_only"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/textview_movie_users_text_only"
+        app:layout_constraintStart_toEndOf="@+id/movie_list_totalvotes"
+        app:layout_constraintTop_toTopOf="@+id/movie_list_totalvotes" />
+
+    <TextView
+        android:id="@+id/movie_list_layout_openbracket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_movie_list_openbracket"
+        app:layout_constraintEnd_toStartOf="@+id/movie_list_voted"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageview_star_image"
+        app:layout_constraintTop_toTopOf="@+id/movie_list_voted" />
+
+    <TextView
+        android:id="@+id/movie_list_votedby_text_only"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_movie_votedby_text_only"
+        app:layout_constraintStart_toEndOf="@+id/movie_list_voted"
+        app:layout_constraintTop_toTopOf="@+id/movie_list_voted" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="107dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/movie_popularity"
+        app:layout_constraintTop_toBottomOf="@+id/movie_list_released"
+        app:srcCompat="@drawable/stars5" />
+
+    <RatingBar
+        android:id="@+id/movie_list_popularity_bar"
+        style="@style/Base.Widget.AppCompat.RatingBar.Small"
+        android:layout_width="79dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="1"
+        android:stepSize=".1"
+        app:layout_constraintStart_toEndOf="@+id/movie_popularity"
+        app:layout_constraintTop_toBottomOf="@+id/movie_list_released" />
+
+    <RatingBar
+        android:id="@+id/movie_list_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="1"
+        android:rating=".1"
+        android:stepSize=".1"
+        app:layout_constraintStart_toStartOf="@+id/imageview_star_image"
+        app:layout_constraintTop_toBottomOf="@+id/movie_popularity" />
+</android.support.constraint.ConstraintLayout>

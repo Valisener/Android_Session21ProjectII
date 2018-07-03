@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Margin for the ovewview textview-->
+    <dimen name="margin">10dp</dimen>
+    <!--Set the text size for the style that controls the text for posters crew cast ect-->
+    <dimen name="textsize">25sp</dimen>
+    <dimen name="textview_max_width">100sp</dimen>
+</resources>

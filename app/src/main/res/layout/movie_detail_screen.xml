@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_detailed_movie_background"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/movies_details_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView_Posters_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TitlesTheme"
+            android:text="@string/posters_text" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/movies_details_poster_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movies_details_recyclerview">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView_Trailers_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TitlesTheme"
+            android:text="@string/trailers_text" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/movies_details_trailer_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView_Casts_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TitlesTheme"
+            android:text="@string/casts_text" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/movies_details_casts_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView_Crews_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TitlesTheme"
+            android:text="@string/crews_text" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/movies_details_crew_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

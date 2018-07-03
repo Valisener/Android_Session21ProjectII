@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">IMDB Project</string>
+    <!--informational string for the first set of movie lists-->
+    <string name="textview_movie_title">Movie Title</string>
+    <string name="textview_movie_list_released_text_only">Released on : </string>
+    <string name="textview_movie_popularity_text">Popularity</string>
+    <string name="textview_movie_users_text_only">  users.</string>
+    <string name="textview_movie_votedby_text_only">) voted by</string>
+    <string name="textview_movie_list_openbracket">(</string>
+    <!--end information string for the first set of movie lists-->
+    <!--Menu items-->
+    <string name="menu_mostpopular">Most Popular</string>
+    <string name="menu_upcomingmovies">Upcoming Movies</string>
+    <string name="menu_latestmovies">Latest Movies</string>
+    <string name="menu_nowplaying">Now Playing</string>
+    <string name="menu_toprated">Top Rated</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_favorites">My Favorites</string>
+    <string name="menu_watchlist">My Watchlist</string>
+    <!--End menu items-->
+    <!--placeholders and information for the detail screen-->
+    <string name="rating_score_out_ten">/10)</string>
+    <string name="placeholder_movie_title">Movie Title</string>
+    <string name="placeholder_overview_short">Man wasn\'t meant to die here</string>
+    <string name="placeholder_releasedate_actual">05/11/2014</string>
+    <string name="placeholder_fake_money_value">621,752,480</string>
+    <string name="open_bracket_uservotes">(</string>
+    <string name="detail_poster_content_description">This is a poster for the movie you clicked on.</string>
+    <string name="mywatchlist">My Watchlist</string>
+    <string name="myfavorites">My Favorites</string>
+    <string name="posters_text">Posters</string>
+    <string name="trailers_text">Trailers</string>
+    <string name="casts_text">Casts</string>
+    <string name="crews_text">Crews</string>
+    <string name="budget">Budget $</string>
+    <string name="revenue">Revenue $</string>
+    <string name="status">Status:</string>
+    <string name="users_text"> users.</string>
+    <string name="menu_post_rating">Send Rating of Movie</string>
+    <string name="posters_description">This displays an image of the posters.</string>
+    <!--end of placeholders and info for detail screen-->
+
+
+</resources>
