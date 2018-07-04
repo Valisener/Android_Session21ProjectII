@@ -22,6 +22,7 @@ public class FetchDataFromWebsite extends AsyncTask<Void, Void, Void> implements
     private String responseData;
     //string that contains the website url initialization
     private String websiteUrl;
+    //string handles the type of what is being passed
     private String type;
 
     //Constructor that accepts response handler and context

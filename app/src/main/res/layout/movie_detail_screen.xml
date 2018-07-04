@@ -7,11 +7,12 @@
     android:layout_height="match_parent"
     android:background="@color/color_detailed_movie_background"
     >
+    <!--linear layout vertical to keep things vertical-->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
+        <!--recyclerview for the movie details information-->
         <android.support.v7.widget.RecyclerView
         android:id="@+id/movies_details_recyclerview"
         android:layout_width="wrap_content"
@@ -19,16 +20,15 @@
         android:scrollbars="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
         </android.support.v7.widget.RecyclerView>
-
+        <!--textview Posters text-->
         <TextView
             android:id="@+id/textView_Posters_Text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/TitlesTheme"
             android:text="@string/posters_text" />
-
+        <!--recyclerview for posters-->
         <android.support.v7.widget.RecyclerView
             android:id="@+id/movies_details_poster_recyclerview"
             android:layout_width="match_parent"
@@ -36,45 +36,42 @@
             android:scrollbars="vertical"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/movies_details_recyclerview">
-
         </android.support.v7.widget.RecyclerView>
-
+        <!--textview trailers text-->
         <TextView
             android:id="@+id/textView_Trailers_Text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/TitlesTheme"
             android:text="@string/trailers_text" />
-
+        <!--recyclerview for trailers-->
         <android.support.v7.widget.RecyclerView
             android:id="@+id/movies_details_trailer_recyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="horizontal">
-
         </android.support.v7.widget.RecyclerView>
-
+        <!--textview casts text-->
         <TextView
             android:id="@+id/textView_Casts_Text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/TitlesTheme"
             android:text="@string/casts_text" />
-
+        <!--recyclerview for casts-->
         <android.support.v7.widget.RecyclerView
             android:id="@+id/movies_details_casts_recyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
         </android.support.v7.widget.RecyclerView>
-
+        <!--textview crews text-->
         <TextView
             android:id="@+id/textView_Crews_Text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/TitlesTheme"
             android:text="@string/crews_text" />
-
+        <!--recyclerview for crew-->
         <android.support.v7.widget.RecyclerView
             android:id="@+id/movies_details_crew_recyclerview"
             android:layout_width="match_parent"

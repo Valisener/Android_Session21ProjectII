@@ -1,4 +1,5 @@
 <resources>
+    <!--App name-->
     <string name="app_name">IMDB Project</string>
     <!--informational string for the first set of movie lists-->
     <string name="textview_movie_title">Movie Title</string>
@@ -17,7 +18,7 @@
     <string name="menu_refresh">Refresh</string>
     <string name="menu_favorites">My Favorites</string>
     <string name="menu_watchlist">My Watchlist</string>
-    <string name="menu_post_rating">Send Rating of 8.5 for this movie</string>
+    <string name="menu_post_rating">Send a rating for this movie</string>
     <!--End menu items-->
     <!--placeholders and information for the detail screen-->
     <string name="rating_score_out_ten">/10)</string>

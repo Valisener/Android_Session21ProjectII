@@ -1,13 +1,18 @@
 package projectimdb2.acadgild.com.imdbproject;
 
 import android.content.ContentValues;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.InputType;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -152,12 +157,40 @@ public class MovieDetailActivity extends AppCompatActivity implements ResponseHa
     }
     //method that sends the post with the user rating
     private void postUserRating() {
-        //Set the website url to be used in a string of url
-        String url = POST_BASE + movieId + POST_GUEST_SESSION + POST_API_KEY;
-        //make a new class that performs a post and gives the value 8.5
-        PostDataToWebsite postDataToWebsite = new PostDataToWebsite(MovieDetailActivity.this,url);
-        //execute the post
-        postDataToWebsite.execute();
+        //create new alertdialog builder
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        //set the title
+        builder.setTitle("Set the rating 0.0 to 10.0");
+        // Set up the input
+        final EditText input = new EditText(this);
+        // Specify the type of input expected
+        input.setInputType(InputType.TYPE_CLASS_TEXT);
+        //set the view on builder
+        builder.setView(input);
+        // Set up the buttons
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                //Set the rating text from the input
+                String rating = input.getText().toString();
+                //Set the website url to be used in a string of url
+                String url = POST_BASE + movieId + POST_GUEST_SESSION + POST_API_KEY;
+                //make a new class that performs a post and passes the value of rating as well
+                PostDataToWebsite postDataToWebsite = new PostDataToWebsite(MovieDetailActivity.this ,url ,rating);
+                //execute the post
+                postDataToWebsite.execute();
+            }
+        });
+        //set the cancel button
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                //cancel the dialogbox
+                dialog.cancel();
+            }
+        });
+        //show dialog box
+        builder.show();
     }
     //method that adds the movie the user is looking at as a favorite or to the watchlist
     private void addMovieAsFavoriteOrWatchlist(String selection) {

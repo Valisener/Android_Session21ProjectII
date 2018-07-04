@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <!--textview popularity text-->
     <TextView
         android:id="@+id/movie_popularity"
         android:layout_width="wrap_content"
@@ -13,7 +13,7 @@
         android:text="@string/textview_movie_popularity_text"
         app:layout_constraintStart_toEndOf="@+id/movie_list_poster"
         app:layout_constraintTop_toBottomOf="@+id/movie_list_released" />
-
+    <!--textview rating for movie-->
     <TextView
         android:id="@+id/movie_list_voted"
         android:layout_width="wrap_content"
@@ -22,23 +22,22 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/movie_list_ratingbar"
         app:layout_constraintTop_toBottomOf="@+id/movie_list_popularity_bar" />
-
+    <!--textview total votes for movie-->
     <TextView
         android:id="@+id/movie_list_totalvotes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginStart="8dp"
         app:layout_constraintStart_toEndOf="@+id/movie_list_votedby_text_only"
         app:layout_constraintTop_toTopOf="@+id/movie_list_voted" />
-
+    <!--textview released information for movie-->
     <TextView
         android:id="@+id/movie_list_released"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@+id/movie_list_layout_releasedtext"
         app:layout_constraintTop_toBottomOf="@+id/movie_list_title" />
-
+    <!--textview Movie Title for the movie-->
     <TextView
         android:id="@+id/movie_list_title"
         android:layout_width="wrap_content"
@@ -47,19 +46,18 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/movie_list_poster"
         app:layout_constraintTop_toTopOf="@+id/movie_list_poster" />
-
+    <!--imageview poster for movie-->
     <ImageView
         android:id="@+id/movie_list_poster"
         android:layout_width="106dp"
         android:layout_height="115dp"
         android:layout_marginStart="16dp"
-
         android:layout_marginTop="16dp"
         android:src="@drawable/loading"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/posters_description" />
-
+    <!--textview released on text-->
     <TextView
         android:id="@+id/movie_list_layout_releasedtext"
         android:layout_width="wrap_content"
@@ -68,7 +66,7 @@
         app:layout_constraintStart_toEndOf="@+id/movie_list_poster"
         app:layout_constraintTop_toBottomOf="@+id/movie_list_title"
         />
-
+    <!--textview users text-->
     <TextView
         android:id="@+id/movie_list_users_text_only"
         android:layout_width="wrap_content"
@@ -77,7 +75,7 @@
         android:text="@string/textview_movie_users_text_only"
         app:layout_constraintStart_toEndOf="@+id/movie_list_totalvotes"
         app:layout_constraintTop_toTopOf="@+id/movie_list_totalvotes" />
-
+    <!--textview open bracket text-->
     <TextView
         android:id="@+id/movie_list_layout_openbracket"
         android:layout_width="wrap_content"
@@ -85,7 +83,7 @@
         android:text="@string/textview_movie_list_openbracket"
         app:layout_constraintEnd_toStartOf="@+id/movie_list_voted"
         app:layout_constraintTop_toTopOf="@+id/movie_list_voted" />
-
+    <!--textview voted by text-->
     <TextView
         android:id="@+id/movie_list_votedby_text_only"
         android:layout_width="wrap_content"
@@ -93,7 +91,7 @@
         android:text="@string/textview_movie_votedby_text_only"
         app:layout_constraintStart_toEndOf="@+id/movie_list_voted"
         app:layout_constraintTop_toTopOf="@+id/movie_list_voted" />
-
+    <!--ratingbar popularity for movielist-->
     <RatingBar
         android:id="@+id/movie_list_popularity_bar"
         style="@style/Base.Widget.AppCompat.RatingBar.Small"
@@ -106,7 +104,7 @@
         android:stepSize=".1"
         app:layout_constraintStart_toEndOf="@+id/movie_popularity"
         app:layout_constraintTop_toBottomOf="@+id/movie_list_released" />
-
+    <!--rating bar for the movie rating-->
     <RatingBar
         android:id="@+id/movie_list_ratingbar"
         android:layout_width="wrap_content"
